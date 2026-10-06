@@ -12,18 +12,72 @@ background-repeat: no-repeat;
 
 .title{
     background-color: rgb(151,204,232);
-    height: 40vf;
     border: 4px solid black;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .Paul{
- margin-left: auto;
- margin-right: auto;
  border: 4px solid black;
  border-radius: 10px;
- max-width: 300px;
+ max-width: 350px;
+ margin: 10px;
+}
+
+.maininfo
+{
+    display: flex; /* I learnt this online. div are block-level elements,
+    but so I can include the text and the photo in the same line, I used 
+    display: flex; which makes everything flow.
+    */
+    /*
+    This aligns everything to the center.
+    */
+
+}
+
+.bio{
+    background-color: rgb(151,204,232);
+    border: 4px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px; 
+}
+
+.Placelist li{
+    /*this creates a 10 pixel gap between each item 
+    */
+margin-bottom: 10px;
+}
+
+.Placelist{
+    background-color: rgb(255,235,153);
+    border: 4px solid black;
+    padding: 45px;
+    border-radius: 10px;
+    margin:10px; 
+}
+
+.subjects{
+   background-color: rgb(30, 176, 42);
+    border: 4px solid black;
+    padding: 45px;
+    border-radius: 10px;
+    margin:10px;  
+}
+
+.Lists{
+    display: flex;
+    gap: 15px;
+}
+
+.navbar{
+   background-color: rgb(140, 67, 230);
+    border: 4px solid black;
+    padding: 45px;
+    border-radius: 10px;
+    margin:10px;  
 }
