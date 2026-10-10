@@ -18,13 +18,14 @@ specifies the document's language as English, etc...
 <body>
 
     <!--
-    This section element helps with the organization of the text box. The title includes a h1 element with the title, and a paragraph element, crediting 
+    This section element helps with the organization of the title box. The title includes a h1 element with the title, and a paragraph element, crediting 
     magnific.com for the pictures. (It also includes a link to magnific.com using the anchor element.)
 
     Section and div elements group other elements to help with organization especially with CSS styling.
 -->
     <section class="title">
             <h1>Paul's Personal Webpage</h1>
+            <!--<strong> bolds the enclosed text-->
             <p>Credits: <strong>All</strong> pictures come from Magnific.com <a href="https://www.magnific.com/">Check
                     it
                     out!</a></p>
@@ -32,12 +33,13 @@ specifies the document's language as English, etc...
     </section>
 
     <main>
-        <!-- a div element has the class "maininfo" which will be used for styling -->
+        <!-- a section element has the class "maininfo" which will be used for styling -->
         <section class = "maininfo">
                 <!--Image element with the attributes src to the link (FinalPaul.png), alt comment of "Photo of Paul" for accessibility, and it belongs to the class "Paul" -->
                 <img src="FinalPaul.png" alt="Photo of Paul" class="Paul">
 
-                <!--another div which has the class of bio contains a quick biography about me using <p> and <h3> elements for text and <br> elements to go next lines.-->
+                <!--a div element (used for organization) which has the class of bio contains a quick biography about me using <p> (paragraph
+                    and <h3> (header) elements for text and <br> elements to go next lines.-->
                 <div class="bio">
                     <h3>Quick bio:</h3>
                     <p> Hello! My name is Paul Joseph Naive. I'm a 10th grader at the Village High School! This is my
@@ -67,11 +69,15 @@ specifies the document's language as English, etc...
         </section>
     </main>
 
-    <section>
-    <div class="Lists">
+    <!--This section has the class of "Lists" and it contains multiple div elements that will be used to create ordered
+    and unordered lists-->
+    <section class="Lists">
+        <!--This div element has a class of Placelist which will be used for styling in CSS. Every other list below this one
+        also has its own div with its appropriate name.-->
         <div class="Placelist">
+            <h3>Places I've Lived in: </h3>
+            <!--This represents an unordered list that has list elements that talk about where and when I've lived over the years.-->
             <ul>
-                <h3>Places I've Lived in: </h3>
                 <li>2023-2026: TX, USA</li>
                 <li>2022-2023: Luanda, Angola</li>
                 <li>2020-2022: Manila, Philippines</li>
@@ -80,8 +86,9 @@ specifies the document's language as English, etc...
             </ul>
         </div>
         <div class="subjects">
+            <h3>My current 10th grade subjects: </h3>
+            <!--This represents an ordered (numbered) list that has list <li> elements that talk about my current subjects in school-->
             <ol>
-                <h3>My current 10th grade subjects: </h3>
                 <li>AP Physics 1</li>
                 <li>Chamber Orchestra</li>
                 <li>Web Apps</li>
@@ -93,8 +100,9 @@ specifies the document's language as English, etc...
             </ol>
         </div>
         <div class="hobbies">
+            <!--This represents an ordered (numbered) list that has list <li> elements that talk about my favorite hobbies to do after school-->
+            <h3>My favorite hobbies after school: </h3>
             <ol>
-                <h3>My hobbies after school: </h3>
                 <li>Playing the piano</li>
                 <li>Biking with my friends</li>
                 <li>Playing Mario Videogames</li>
@@ -102,9 +110,12 @@ specifies the document's language as English, etc...
                 <li>Doing Origami</li>
             </ol>
         </div>
+
+
         <div class="books">
+            <h3>My All Time Enjoyable Books</h3>
+            <!--This shows another unordered list that has <li> elements that will talk about some of the books I really loved reading.;-->
             <ul>
-                <h3>All Time Favorite Books</h3>
                 <li>I Will Always Write Back (Martin Ganda + Caitlin Alifrenka)</li>
                 <li>Pan's Labyrinth: The Labyrinth of Faun (Cornelia Funke)</li>
                 <li>Tuesdays with Morrie (Mitch Albom)</li>
@@ -112,12 +123,16 @@ specifies the document's language as English, etc...
                 <li>Enrique's Journey (Sonia Nazario)</li>
             </ul>
         </div>
-    </div>
-</section>
+    </section>
 
-    <div class="navbar">
+    <!--This section has the class of "navbar" and includes elements related to navigating the whole webpage.-->
+    <section class="navbar">
+        <!--Anchored within a <p> element are multiple anchor elements which contain the attribute href 
+            and its specific values corresponding to different links of the web page. This helps the user 
+            navigate between different tabs of the website.-->
         <p><a href="index.html"> | Home </a>| |<a href="music.html">Music Portfolio</a>| |<a
                 href="contact.html">Contacts</a>|</p>
+    </section>
 </body>
 
 </html>

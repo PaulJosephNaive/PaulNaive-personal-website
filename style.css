@@ -1,61 +1,92 @@
+/* This styles the body element itself in the index.html file
+*/
 Body{
-/* I learnt this outside of the tutorials (importing a jpg into my folder and linking it to be the background of the website). 
+/*  the property of background-image will have the background of the CalmTree.jpg image which is also in my PaulNaive-Website Folder.
+Furthermore, background-size cover means the background will cover the entiretiy of the body element. 
 */
 background-image: url("CalmTree.jpg"); 
 background-size: cover;
 }
 
+/* This targets every element in the index.html file and changes its font to Tahoma.*/
 *{
     font-family:Tahoma;
 }
-
+/* This sets all of the paragraph elements in the file to have a font size of 22 pixels.
+*/
 p{
     font-size: 22px;
 }
 
+/* This sets all of the anchor elements in the file to have a font size of 22 pixels.
+*/
 a{
     font-size: 22px;
 }
 
+/* This sets all of the anchor elements in the file to have a font size of 22 pixels.
+*/
 li{
     font-size: 22px;
 }
 
+/* The property (font size) has the value of 40px and it will be applied to all h1 elements.
+*/
 h1{
     font-size: 40px;
 }
 
+/* All of this will be applied to the element that has the class named "title"
+*/
 .title{
+    /* The background color of the .title section will have a background color of the following rgb value below. (The a value determines how transparent it is).
+    Furthermore, the border property with the value of 4px, solid, and black, will give a solid, all black 4 pixel border to the .title section. Furthermore, the padding
+    (internal spacing) has a value of 10px all throughout. The margin-top: 10px means that the .title section will have a 10px "blank space" on top and the margin-bottom: 100px;
+    means that it will have at least a 100px gap until the element right below the section. 
+    */
     background-color: rgba(151, 204, 232, 0.454);
     border: 4px solid black;
     padding: 10px;
+    /* This makes all the text center-aligned within the .title section.*/
     text-align: center;
+    /* This makes the edges of the photo quite curved */
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 100px;
 }
 
+/* This makes the image with .signature class have a maximum width of 300 pixels*/
 .signature{
     max-width: 300px;
 }
 
+/* Similar to whats explained in the .title section, the .Paul image will have a border which is a 4 pixel solid black line. It would also have curved edges, a max-width
+of 600px.
+*/
 .Paul{
  border: 4px solid black;
  border-radius: 10px;
  max-width: 600px;
+
+ /*This is something I learnt outside of the tutorials. This means that the image would fill its container's proportions
+ while still maintaining its original proportions. */
  object-fit: cover;
 }
 
 .maininfo
 {
-    display: flex; /* I learnt this online. div are block-level elements,
-    but so I can include the text and the photo in the same line, I used 
-    display: flex; which makes everything flow.
+    display: flex; /* I also earnt this online. div are block-level elements,
+    but in order for me to include the text (div) and the photo in the same line, I used 
+    display: flex; which makes everything stack side by side like a grid instead of stacking
+    vertically.
     */
 margin-bottom: 50px;
 
 }
 
+/* Similar to the styling of the Title class, this sets the background color to a certain color, defines its 
+curved edges + border style, and its margins + padding.
+*/
 .bio{
     background-color: rgba(151, 204, 232, 0.454);
     border: 4px solid black;
@@ -65,12 +96,9 @@ margin-bottom: 50px;
     margin: 10px; 
 }
 
-.Placelist li{
-    /*this creates a 10 pixel gap between each item 
-    */
-margin-bottom: 10px;
-}
-
+/* Similar to the styling of the Placelist class, this sets the background color to a certain color, defines its 
+curved edges + border style, and its margins + padding, but it also aligns the text to the left. 
+*/
 .Placelist{
     background-color: rgba(255, 235, 153, 0.622);
     border: 4px solid black;
@@ -80,6 +108,9 @@ margin-bottom: 10px;
     text-align:left;
 }
 
+/* Similar to the styling of the other classes above, this sets the background color to a certain color, defines its 
+curved edges + border style, and its margins + padding, but it also aligns the text to the left.
+*/
 .hobbies{
     background-color: rgba(67, 147, 158, 0.531);
     border: 4px solid black;
@@ -89,6 +120,9 @@ margin-bottom: 10px;
     text-align:left;
 }
 
+/* Similar to the styling of the classes above, this sets the background color to a certain color, defines its 
+curved edges + border style, and its margins + padding but it also aligns the text to the left.
+*/
 .subjects{
    background-color: rgba(30, 176, 42, 0.664);
     border: 4px solid black;
@@ -98,11 +132,16 @@ margin-bottom: 10px;
     text-align:left;
 }
 
+/* just like the styling of the .Maininfo class, this makes the element with the .List class to have a gap of 15 pixels
+between each div "child" element and it will stack the divs side by side.*/
 .Lists{
     display: flex;
     gap: 15px;
 }
 
+/* Similar to the styling of the classes above, this sets the background color to a certain color, defines its 
+curved edges + border style, and its margins + padding, but it also aligns the text to the left.
+*/
 .books{
    background-color: rgba(155, 91, 233, 0.652);
     border: 4px solid black;
@@ -112,6 +151,8 @@ margin-bottom: 10px;
     text-align:left;
 }
 
+/*Similar to the other stylings, this styles the section element with the class of navbar with similar values.
+*/
 .navbar{
     background-color: rgb(0, 0, 0);
     border: 4px solid white;
@@ -121,6 +162,9 @@ margin-bottom: 10px;
     
 }
 
+
+/* This sets the text on the navbar (either in the anchor element or p element) to be white.
+*/
 .navbar a{
 color: white;
 }

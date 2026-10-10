@@ -1,3 +1,4 @@
+<!--Boilerplate contains all the foundational information for the code.-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,23 +9,43 @@
     <title>Music</title>
 </head>
 
-<body class="musicBody">
-    <div class="title">
+<body>
+    <main>
+    <!--
+    This section element helps with the organization of the title box. The title includes a h1 element with the title, and a paragraph element, with 
+    a description of what this page will look like.
+-->
+    <section class="title">
         <h1>Welcome to Paul's Musical Portfolio!</h1>
         <p>Scroll down to find embedded videos of my favorite piano pieces!</p>
-    </div>
+    </section>
+
+    <!-- Div element with the class "year1" contains the h2 text of 2026.-->
     <div class="year1">
         <h2>2026</h2>
     </div>
+
+    <!-- Introduction of the iframe element (which embeds websites directly onto your website). The source attribute contains
+     the link of my desired music video. On my website, it will have a width of 854 and a height of 480. The title of the website
+     is Fantasie-Impromptu. I also used inline CSS here to make the border a 4px solid black line and with margins of 10 pixels  -->
     <iframe src="https://www.youtube.com/embed/mY1n4a0uX_c" width="854" height="480" title="Fantasie-Impromptu"
         style="border: 4px solid black; margin: 10px;"></iframe>
+
+    <!-- Div element with the class "firstexplanation" contains a paragraph that explains the piece above-->
     <div class="firstexplanation">
         <p>Fantasie-Impromptu is one of the famous solo piano pieces of the Romantic Era.
             It is well known for its tenary structure (A-B-A), where it starts and ends
             with a restless, stormy melody, while containing a lyrical, flowing middle part.</p>
     </div>
+
+
+    <!--iframe element with a source containing the link of another youtube video. It has a title of "Summer
+    by Joe Hisaishi, has the same height and width as the iframe above. Furthermore, inline CSS is used to 
+    style the border of the element (and it has the same values as the one above.)"-->
     <iframe src="https://www.youtube.com/embed/F4cRTpkFsWw" width="854" height="480" title="Summer by Joe Hisaishi"
         style="border: 4px solid black; margin: 10px;"></iframe>
+
+     <!-- Div element with the class "firstexplanation" contains a paragraph that explains the piece above-->  
     <div class="firstexplanation">
         <p>This is an orchastrated version of "Summer" by the Japanese composer Joe Hisaishi. I along with my friends
             from
@@ -32,58 +53,90 @@
             played this piece to help fundraise for the Texas Center for the Missing gala.
         </p>
     </div>
+
+    <!-- Div element with the class "year2" contains the h2 text of 2025.-->
     <div class="year2">
         <h2>2025</h2>
     </div>
+
+    <!--Iframe with the source of another youtube video and title. Everything other attribute is the same
+    as the ones above.-->
     <iframe src="https://www.youtube.com/embed/7K68xjuKvAM" width="854" height="480" title="Black Key Etude"
         style="border: 4px solid black; margin: 10px;"></iframe>
+
+     <!-- Div element with the class "secondexplanation" contains a paragraph that explains the piece above-->     
     <div class="secondexplanation">
         <p>
             Chopin's Étude Op. 10, No.5 in G-flat major is popularly known as
-            the "Black Key Etude" because the right hand plays a continous stream of
-            notes only on the black keys (with one white note hidden throughout the entire work).
-            Published in 1833, this piece is a frequently used technical study to
-            help with finger agility.
+            the "Black Key Etude" because the right hand plays only on the black keys 
+            (with the exception of one white note hidden throughout the entire work).
+            Published in 1833, this piece is a technical study which 
+            helped me with ny finger agility.
         </p>
     </div>
+
+    <!-- Div element with the class "year3" contains the h2 text of 2023-2024.-->
     <div class="year3">
         <h2>2023-2024</h2>
     </div>
+
+    <!--Iframe with the source of another youtube video and title. Everything other attribute is the same
+    as the ones above.-->
     <iframe src="https://www.youtube.com/embed/TB5qcdYx5g4" width="854" height="480" title="Pierette Air de Ballet"
         style="border: 4px solid black; margin: 10px;"></iframe>
+
+    <!-- Div element with the class "thirdexplanation" contains a paragraph that explains the piece above-->  
     <div class="thirdexplanation">
         <p>
             Pierette, Air de Ballet was composed during the late Romantic period and is
-            known for its charming, lighthearted character. "Air de Ballet" describes
-            a graceful, light piece designed to evoke the movement of a ballet scene.
+            known for its charming, lighthearted character. The title itself "Air de ballet"
+            means that the piece would be elegant and light like a ballet scene.
         </p>
     </div>
+
+    <!--Iframe with the source of another youtube video and title. Everything other attribute is the same
+    as the ones above.-->
     <iframe src="https://www.youtube.com/embed/4_q-CN2LwhY" width="854" height="480" title="Allegro by Mozart"
         style="border: 4px solid black; margin: 10px;"></iframe>
+
+    <!-- Div element with the class "thirdexplanation" contains a paragraph that explains the piece above--> 
     <div class="thirdexplanation">
         <p>
             Allegro by Mozart (The 1st movement of Piano Sonata No.12 in F Major) is written
-            in 3/4 time. The first theme is in F major, then transitions between D minor and C minor.
-            Finally, the key ends in a sparkling C major coda.
+            in 3/4 time (almost waltz-like). It switches between key signatures numerous times 
+            and relies on the switching between soft, graceful parts and loud, chord-heavy parts.
+            That contributes to its dramatic and "grandish" tone.
         </p>
     </div>
-    <div class="Sites">
+
+    </main>
+    <!-- Section with the class "Sites" contains a list of three of my favorite music sites. Also included are 3 links to those sites.
+     using the anchor element  -->
+    <section class="Sites">
         <h2>Paul's Favorite Music Sites:</h2>
         <br>
-        <p><a href = "https://www.hooktheory.com/">Hooktheory</a> is an amazing site that I use to research the chord progressions of tens of thousands of music.
+        <p><a href="https://www.hooktheory.com/">Hooktheory</a> is an amazing site that I use to research the chord
+            progressions of tens of thousands of music.
             It's also a place where I can compose some of my own music!</p>
-            <br>
-        <p><a href = "https://rhapsodate.com/repertoire">Rhapsodate</a> is a site which helps me a lot regarding chamber music. If I'm playing a piece with the Viking Orchestra,
-        I use this to explore the roles of different instruments and some background information about the music.
+        <br>
+        <p><a href="https://rhapsodate.com/repertoire">Rhapsodate</a> is a site which helps me a lot regarding chamber
+            music. If I'm playing a piece with the Viking Orchestra,
+            I use this to explore the roles of different instruments and some background information about the music.
         </p>
         <br>
-        <p><a href = "https://imslp.org/">IMSLP</a> is a public domain that contains around <strong>15 million </strong>pages of music and
-        related documents. I use this source to look for new music, and learn more about different composers.</p>
-    </div>
-    <div class="navbar">
+        <p><a href="https://imslp.org/">IMSLP</a> is a public domain that contains around <strong>15 million
+            </strong>pages of music and
+            related documents. I use this source to look for new music, and learn more about different composers.</p>
+        </section >
+
+    <!--This section has the class of "navbar" and includes elements related to navigating the whole webpage.-->
+    <section class="navbar">
+        <!--Anchored within a <p> element are multiple anchor elements which contain the attribute href 
+            and its specific values corresponding to different links of the web page. This helps the user 
+            navigate between different tabs of the website.-->
         <p><a href="index.html"> | Home </a>| |<a href="music.html">Music Portfolio</a>| |<a
                 href="contact.html">Contacts</a>|</p>
-    </div>
+    </section>
 </body>
 
 </html>
