@@ -1,62 +1,123 @@
+<!--
+This is the HTML boilerplate. It includes the basic structure
+for a typical HTML file. For example, it sets the character
+encoding to UTF-8, links the file to the style.css document,
+specifies the document's language as English, etc...
+-->
+<!-- This tells your browser to render the page using the modern HTML 5 -->
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
+<!--This helps with scaling the webpage to your device's width and height in order to make it compatible-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paul's Personal Web Page</title>
 </head>
 
+<!--The body element holds all the visible components for the website-->
 <body>
-    <div class="title">
-        <h1>Paul's Personal Webpage</h1>
-        <p><em>Created:</em> October 2nd 2026 <em>Version: </em> Beta</p>
-        <p>Credits: Pictures come from Magnific.com <a href = "https://www.magnific.com/">Check it out!</a></p>
-    </div>
 
-    <div class="maininfo">
-        <img src="Paul.png" alt="Photo of Paul" class="Paul">
-        <div class="bio">
-            <h3>Quick bio:</h3>
-            <p> Hello! My name is Paul Joseph Naive and I'm in 10th grade 
-                right now at the Village High School. I am 15 years old, and
-                I see myself working in engineering as a career choice. I love
-                playing the piano and biking with my friends in my free time. My
-                comfort food is spaghetti carbonara, and it's been like that ever since
-                I was a young child. I hope that you have fun exploring my website!                
-            </p>
+    <!--
+    This section element helps with the organization of the text box. The title includes a h1 element with the title, and a paragraph element, crediting 
+    magnific.com for the pictures. (It also includes a link to magnific.com using the anchor element.)
+
+    Section and div elements group other elements to help with organization especially with CSS styling.
+-->
+    <section class="title">
+            <h1>Paul's Personal Webpage</h1>
+            <p>Credits: <strong>All</strong> pictures come from Magnific.com <a href="https://www.magnific.com/">Check
+                    it
+                    out!</a></p>
+        </div>
+    </section>
+
+    <main>
+        <!-- a div element has the class "maininfo" which will be used for styling -->
+        <section class = "maininfo">
+                <!--Image element with the attributes src to the link (FinalPaul.png), alt comment of "Photo of Paul" for accessibility, and it belongs to the class "Paul" -->
+                <img src="FinalPaul.png" alt="Photo of Paul" class="Paul">
+
+                <!--another div which has the class of bio contains a quick biography about me using <p> and <h3> elements for text and <br> elements to go next lines.-->
+                <div class="bio">
+                    <h3>Quick bio:</h3>
+                    <p> Hello! My name is Paul Joseph Naive. I'm a 10th grader at the Village High School! This is my
+                        4th year
+                        at Village.
+
+                        I am currently 15 years old, and I was born in Bangkok, Thailand. I have lived in many places
+                        over the years, but I would say that Houston has been my favorite!
+                        <br></br>
+
+                        As of right now, my favorite subject is Chemistry, but I do enjoy the other sciences
+                        and mathematics. When I'm free, I dedicate most of my time towards music. In the weekend,
+                        I spend at least an hour playing songs with a few of my other friends at elderly facilities.
+                        Furthermore,
+                        I am part of the Tri-M Music Honor Society, and the Viking Orchestra.
+                        <br></br>
+
+                        I hope that this website will help you learn about me!
+
+                        <br>
+                        Best,
+                        <br><br>
+                        <!--Another image element with the attributes src to the link (Sig.png), alt for accessibility, and it belongs to the class "signature" -->
+                        <img src="Sig.png" alt="Signature" class="signature">
+                    </p>
+                </div>
+        </section>
+    </main>
+
+    <section>
+    <div class="Lists">
+        <div class="Placelist">
+            <ul>
+                <h3>Places I've Lived in: </h3>
+                <li>2023-2026: TX, USA</li>
+                <li>2022-2023: Luanda, Angola</li>
+                <li>2020-2022: Manila, Philippines</li>
+                <li>2017-2020: Luanda, Angola</li>
+                <li>2011-2017: Bangkok, Thailand</li>
+            </ul>
+        </div>
+        <div class="subjects">
+            <ol>
+                <h3>My current 10th grade subjects: </h3>
+                <li>AP Physics 1</li>
+                <li>Chamber Orchestra</li>
+                <li>Web Apps</li>
+                <li>AP Pre Calculus</li>
+                <li>AP Computer Science A</li>
+                <li>AP United States History</li>
+                <li>English II Honors</li>
+                <li>Spanish IV Honors</li>
+            </ol>
+        </div>
+        <div class="hobbies">
+            <ol>
+                <h3>My hobbies after school: </h3>
+                <li>Playing the piano</li>
+                <li>Biking with my friends</li>
+                <li>Playing Mario Videogames</li>
+                <li>Cooking (if I have time)</li>
+                <li>Doing Origami</li>
+            </ol>
+        </div>
+        <div class="books">
+            <ul>
+                <h3>All Time Favorite Books</h3>
+                <li>I Will Always Write Back (Martin Ganda + Caitlin Alifrenka)</li>
+                <li>Pan's Labyrinth: The Labyrinth of Faun (Cornelia Funke)</li>
+                <li>Tuesdays with Morrie (Mitch Albom)</li>
+                <li>The Martian (Andy Weir)</li>
+                <li>Enrique's Journey (Sonia Nazario)</li>
+            </ul>
         </div>
     </div>
+</section>
 
-    <div class="Lists"> 
-    <div class = "Placelist">
-    <ul>
-        <h3>Places I've Lived in: </h3>
-        <li>2023-2026: TX, USA</li>
-        <li>2022-2023: Luanda, Angola</li>
-        <li>2020-2022: Manila, Philippines</li>
-        <li>2017-2020: Luanda, Angola</li>
-        <li>2011-2017: Bangkok, Thailand</li>
-    </ul>
-    </div>
-    <div class = "subjects">
-        <ol>
-        <h3>My current 10th grade subjects</h3>
-        <li>AP Physics 1</li>
-        <li>Chamber Orchestra</li>
-        <li>Web Apps</li>
-        <li>AP Pre Calculus</li>
-        <li>AP Computer Science A</li>
-        <li>AP United States History</li>
-        <li>English II Honors</li>
-        <li>Spanish IV Honors</li>
-        </ol>
-    </div>
-    <div class = "navbar">
-        <h3>Navigation</h3>
-        <a href="music.html">Music Portfolio</a>
-        <p>Contact me *Work in Progress*</p>
-        <p>Coding Center *Work in Progress*</p>
-    </div>
+    <div class="navbar">
+        <p><a href="index.html"> | Home </a>| |<a href="music.html">Music Portfolio</a>| |<a
+                href="contact.html">Contacts</a>|</p>
 </body>
 
 </html>
